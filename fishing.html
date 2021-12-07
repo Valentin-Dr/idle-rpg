@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&family=Teko&display=swap"
+        rel="stylesheet">
+
+    <title>Idle Student RPG</title>
+</head>
+
+<body>
+    <header id="header">Idle Student RPG</header>
+    <div class="game">
+        <button class="open-settings-modale">
+            Paramètres
+        </button>
+        <button class="open-pets-modale">
+            <p>Familiers</p>
+        </button>
+
+        <div id="pet" class="">
+            <div class="currentPetTooltip">
+                <p class="currentPetEffect"></p>
+                <p class="currentPetKillLeft"></p>
+            </div>
+        </div>
+
+        <div id="player" class="attack1">
+
+        </div>
+
+        <!-- <div class="crit-alert hidden">
+            <p>CRITIQUE !</p>
+        </div>
+
+        <div class="enemy cub">
+
+        </div> -->
+
+        <div class="upgrades">
+            <div class="clickable upgrade strength">
+                <i class="fas fa-fist-raised fa-2x"></i>
+                <p class="upgrade-title">Augmenter la force</p>
+                <p>Force actuelle : <span id="strength"></span></p>
+                <p>Coût : <span id="strength-cost"></span></p>
+            </div>
+            <div class="clickable upgrade atk-speed">
+                <i class="fas fa-solid fa-bolt fa-2x"></i>
+                <p class="upgrade-title">Augmenter la vitesse</p>
+                <p>Attaque toutes les 0.<span id="atk-speed"></span>s(-10)</p>
+                <p>Coût : <span id="atk-speed-cost"></span></p>
+            </div>
+            <div class="clickable upgrade critical">
+                <i class="fas fa-solid fa-check fa-2x"></i>
+                <p class="upgrade-title">Augmenter les critiques</p>
+                <p>Chance de critique: <span id="critical"></span>%(+1%)</p>
+                <p>Coût : <span id="critical-cost"></span></p>
+
+            </div>
+            <div class="clickable upgrade critical-dmg">
+                <i class="fas fa-solid fa-check-double fa-2x"></i>
+                <p class="upgrade-title">Augmenter dégâts crit.</p>
+                <p>Dégâts critiques : x<span id="critical-dmg"></span></p>
+                <p>Coût : <span id="critical-dmg-cost"></span></p>
+            </div>
+            <div class="clickable upgrade">
+
+            </div>
+            <div class="clickable upgrade">
+
+            </div>
+            <div class="clickable upgrade">
+
+            </div>
+            <div class="clickable upgrade">
+
+            </div>
+            <div class="clickable upgrade">
+
+            </div>
+            <div class="clickable upgrade">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="stats-container">
+        <div class="stats">
+            <p>Stage : <span id="stage"></span></p>
+            <p>Gold : <span id="gold"></span></p>
+        </div>
+
+        <div class="stage">
+            <p><span id="stage-count"></span>/10 ennemis tués</p>
+        </div>
+
+        <div class="foe">
+            <p>Ennemi : <span id="foe"></span></p>
+            <p>Vie restante : <span id="foe-health"></span></p>
+        </div>
+    </div> -->
+
+    <div class="autosave hidden">
+        <p>Sauvegarde automatique...</p>
+    </div>
+
+    <!-- <div class="pets-modale hidden">
+        <div class="modale-content">
+            <h2>Acheter un familier</h2>
+            <div class="flex">
+                <div class="cell testPet">
+                    <div class="petTooltip">
+                        <p><span class="petName"></span></p>
+                        <p>Coût : <span class="petCost"></span> </p>
+                        <p>Attaque +1 à +1000</p>
+                        <p>Le bonus augmente en fonction du nombre de monstres tués avec le familier équippé</p>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="petTooltip">
+                        <p><span class="petName"></span></p>
+                        <p>Coût : <span class="petCost"></span> </p>
+                    </div>
+                </div>
+                <div class="cell">
+
+                </div>
+                <div class="cell">
+
+                </div>
+                <div class="cell">
+
+                </div>
+                <div class="cell">
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="settings-modale hidden">
+        <div class="settings-content">
+            <h2>Paramètres</h2>
+            <div class="flex spaced">
+                <button class="manualSave">Sauvegarder</button>
+                <button class="manualLoad">Charger la dernière sauvegarde</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ff38268670.js" crossorigin="anonymous"></script>
+    <script src="./js/upgrades.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+</body>
+
+</html>
